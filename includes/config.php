@@ -6,7 +6,7 @@ $config['db'] = array(
 	'host' => 'localhost',
 	'user' => 'otto',
 	'pass' => 'otto',
-	'db' => 'otto_graaf',
+	'db' => 'ala_otto_graaf',
 	'port' => '3306'
 );
 // Add the wrapper
