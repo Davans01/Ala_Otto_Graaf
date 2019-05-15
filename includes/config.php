@@ -20,4 +20,5 @@ if (isset($db->connect_error)){
 }
 	echo "klaar";
 	echo "done";
+	echo "ja";
 ?>
