@@ -17,11 +17,5 @@ $config['db']['port']);
 // require_once('lib/lib.php');
 if (isset($db->connect_error)){
     die("Connection failed: " . $db->connect_error);
-<<<<<<< HEAD
 };
-=======
-}
-	echo "klaar";
-	echo "done";
->>>>>>> 5fbc0b8884952f08213ec7a61960f1bbe92c71af
 ?>
