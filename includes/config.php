@@ -10,12 +10,12 @@ $config['db'] = array(
 	'port' => '3306'
 );
 // Add the wrapper
-require_once('../lib/mysqli_db_wrapper.php');
-
+require_once(__DIR__ . '/../lib/mysqli_db_wrapper.php');
 $db = new MysqliDb($config['db']['host'], $config['db']['user'], $config['db']['pass'], $config['db']['db'],
 $config['db']['port']);
 // require_once('lib/lib.php');
 if (isset($db->connect_error)){
-    die("Connection failed: " . $db->connect_error);
+	die("Connection failed: " . $db->connect_error);
 };
+require_once(__DIR__ . '/../lib/lib.php');
 ?>
