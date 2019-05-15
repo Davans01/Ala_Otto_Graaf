@@ -23,32 +23,22 @@
         <i class="fa fa-list btn-list"></i>
       </nav>
       
-
+<br><br>
       <div class="gallery">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/BUQU9ERJAC.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/L2XY1E8DEV.jpg">
-        <img class="picture" src="http://media.digitalcameraworld.com/wp-content/uploads/sites/123/2012/05/Landscape_photography_tips.foamy_3.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/DH3TS2T6NF.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/FVIYKRN6CI.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/J2XAUBP5Y1.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/8Z2QWLCH72.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/BUQU9ERJAC.jpg">
-        <img class="picture" src="anton-repponen-99530-unsplash.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/BUQU9ERJAC.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/L2XY1E8DEV.jpg">
-        <img class="picture" src="http://media.digitalcameraworld.com/wp-content/uploads/sites/123/2012/05/Landscape_photography_tips.foamy_3.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/DH3TS2T6NF.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/FVIYKRN6CI.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/J2XAUBP5Y1.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/8Z2QWLCH72.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/BUQU9ERJAC.jpg">
-        <img class="picture" src="anton-repponen-99530-unsplash.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/DH3TS2T6NF.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/FVIYKRN6CI.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/J2XAUBP5Y1.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/8Z2QWLCH72.jpg">
-        <img class="picture" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/BUQU9ERJAC.jpg">
-        <img class="picture" src="anton-repponen-99530-unsplash.jpg">
+        <img class="picture" src="images/chi-liu-1552956-unsplash.jpg">
+        <img class="picture" src="images/benjamin-voros-575800-unsplash.jpg">
+        <img class="picture" src="images/dimitry-anikin-1461827-unsplash.jpg">
+        <img class="picture" src="images/dominic-krainer-1381989-unsplash.jpg">
+        <img class="picture" src="images/erzsebet-vehofsics-1401802-unsplash.jpg">
+        <img class="picture" src="images/sebastien-jermer-27003-unsplash.jpg">
+        <img class="picture" src="images/jordan-arnold-1513926-unsplash.jpg">
+        <img class="picture" src="images/michael-liao-1508603-unsplash.jpg">
+        <img class="picture" src="images/mark-mathew-1289706-unsplash.jpg">
+        <img class="picture" src="images/pablo-guerrero-1308486-unsplash.jpg">
+        <img class="picture" src="images/luca-micheli-455516-unsplash.jpg">
+        <img class="picture" src="images/maarten-deckers-234714-unsplash.jpg">
+        <img class="picture" src="images/oliver-ash-1279414-unsplash.jpg">
+        <img class="picture" src="images/daniel-ferrandiz-mont-1316873-unsplash.jpg">
 
       </div>
       <script>
@@ -60,9 +50,11 @@ $(".picture").mouseleave(function(){
  $(this).animate({opacity:0.8},200);
 });
       </script>
+      
       </body>
      <footer>
-          <h2>&copy; Quins Maduro, daniel van straten, kevin</h2>
+        <img class="footer" src="images/naamloos-1.png">
+          <h2>&copy; Quins Maduro, daniel van straten, kevin, Kamil Obaidollah</h2>
      </footer>
       </body>
      </html>
