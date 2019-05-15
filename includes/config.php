@@ -18,5 +18,6 @@ $config['db']['port']);
 if (isset($db->connect_error)){
     die("Connection failed: " . $db->connect_error);
 }
-    echo "klaar";
+	echo "klaar";
+	echo "done";
 ?>
