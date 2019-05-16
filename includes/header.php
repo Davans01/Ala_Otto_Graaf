@@ -8,6 +8,7 @@
             <a class="active" href="/">Home</a> -->
         <!-- </div> -->
         <div class="dropdown" style="float: right; margin-right: 100px;">
+            <!-- Image for the soppingcart -->
             <a href="#cart"><img width="30px" src="images/shoppingcart.png"></a>
             <div class="dropdown-content" style="float: left; margin-right: 20px;">
                 <a href="#">Link 1</a>
@@ -17,5 +18,3 @@
         </div>
     </div>
 </div>
-
-                                                
