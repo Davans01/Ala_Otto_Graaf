@@ -22,11 +22,6 @@
         <i class="fa fa-th btn-gallery active"></i>
         <i class="fa fa-list btn-list"></i>
       </nav>
-<<<<<<< HEAD
-
-=======
-      
->>>>>>> c49c624146f490a2e8720956cf3dc2e6f9577ebb
 <br><br>
       <div class="gallery">
         <img class="picture" src="images/chi-liu-1552956-unsplash.jpg">
@@ -54,19 +49,10 @@ $(".picture").mouseleave(function(){
  $(this).animate({opacity:0.8},200);
 });
       </script>
-<<<<<<< HEAD
+     </html>
+
       <?php
       include("includes/footer.php");
       ?>
       </body>
      </html>
-=======
-      
-      </body>
-     <footer>
-        <img class="footer" src="images/naamloos-1.png">
-          <h2>&copy; Quins Maduro, daniel van straten, kevin, Kamil Obaidollah</h2>
-     </footer>
-      </body>
-     </html>
->>>>>>> c49c624146f490a2e8720956cf3dc2e6f9577ebb
