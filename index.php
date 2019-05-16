@@ -12,7 +12,7 @@
 
         <div class="gallery">
             <?php
-            $products = get_all_products();
+            $products = get_all_landen();
             foreach ( $products as $product ) {
                 //
                 echo "<a href='view.php?id=".$product['id']."'><img class='picture' src='" .$product['image'] ."'></a>";
