@@ -16,17 +16,23 @@ else {
     <body>
         <?php include('includes/header.php') ?>
         
-        <div class="details">
+        <div class="details"><center>
             <?php
             $details = $product->details();
             // print_r($details);
-            echo "<img class='picture' src='".$details['image']."'><br>";
+            echo "<img width='50%' src='".$details['image']."'><br>";
             echo $details['name']."<br>";
-            echo "<br><br>";
+            echo "<br>";
             echo $details['description'];
+            echo "<br><br>";
+            echo "Prijs: ".$details['price'];
+            echo "<form method='post'>";
+            echo "<input type='hidden' name='itemid' value='".$details['id']."'>";
+            echo "<input type='submit' class='button' name='insert' value='voeg toe aan winkelwagen' /> ";
+
             ?>
 
-        </div>
+        </center></div>
         <?php include('includes/footer.php') ?>
     </body>
 </html>
