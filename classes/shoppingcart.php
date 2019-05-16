@@ -16,6 +16,9 @@ class ShoppingCart
             }
             // if SESSION is not valide
             else {
+                unset($_SESSION['cartid']);
+                unset($_SESSION['token']);
+
                 $this->cartid = self::newcart();
                 $this->token = self::token($this->cartid);
 
@@ -55,14 +58,14 @@ class ShoppingCart
     {
         //
         global $db;
-        // return $db;
+
         $data = array(
-            'time'          => time(),
-            'total_amount'  => 100
+            'time'          => time()
         );
 
         $cart = $db->insert('orders', $data);
-        $cartid = $db->getInsertId();
+        // $cartid = $db->getInsertId();
+
         return $cart;
     }
     //
@@ -70,5 +73,7 @@ class ShoppingCart
     public function add_item($itemid)
     {
         //
+        global $db;
+
     }
 }
