@@ -18,4 +18,11 @@ class Product {
         $db->where("id = $this->productid");
         return $db->getOne('products');
     }
+
+    public function order()
+    {
+        //
+    }
+
+    
 }
