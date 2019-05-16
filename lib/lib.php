@@ -1,8 +1,11 @@
 <?php
 
-function get_all_products()
+function get_all_products($catid)
 {
     global $db;
+    if ($catid) {
+        $db->where("catogory_id = $catid");
+    }
 
     return $db->get('products');
 }

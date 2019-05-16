@@ -13,3 +13,6 @@
         </div>
     </div>
 </div>
+<a href="/?catid=1">Nieuws</a>
+<a href="/?catid=2">Modellen</a>
+<a href="/?catid=3">Land</a>

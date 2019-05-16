@@ -29,7 +29,6 @@ else {
             echo "<form method='post'>";
             echo "<input type='hidden' name='itemid' value='".$details['id']."'>";
             echo "<input type='submit' class='button' name='insert' value='voeg toe aan winkelwagen' /> ";
-
             ?>
 
         </center></div>

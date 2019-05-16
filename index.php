@@ -13,7 +13,13 @@
         <div class="gallery">
             <?php
             // Funtion get_all_landen
-            $products = get_all_landen();
+            if (isset($_GET['catid'])) {
+                $catid = $_GET['catid'];
+            }
+            else {
+                $catid = false;
+            }
+            $products = get_all_products($catid);
             // Foreach product make a image with a href
             foreach ( $products as $product ) {
                 //
