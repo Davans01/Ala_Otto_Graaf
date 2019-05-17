@@ -36,10 +36,5 @@ if (isset($_POST['insert'])) {
 
         </center></div>
         <?php include('includes/footer.php') ?>
-        <?php
-        echo '<pre>';
-print_r($_SESSION);
-echo '</pre>';
-?>
     </body>
 </html>

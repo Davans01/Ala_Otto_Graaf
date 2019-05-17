@@ -11,7 +11,7 @@
             if ($cartitems) {
                 foreach ($cartitems as $cartitem) {
                     $cartproduct = $shoppingcart->get_itemdetails($cartitem['productid']);
-                    echo "<a href='#'>".$cartproduct['name']."</a>";
+                    echo $cartproduct['name']." <a href='#'>x</a>";
                 }
             }
             ?>
