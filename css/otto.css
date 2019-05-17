@@ -248,3 +248,16 @@ width: 100%;
 .button1 {
   background-color: #4CAF50;
 }
+
+.button3 {
+  background-color: #0030C2; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0px 0px;
+  cursor: pointer;
+}

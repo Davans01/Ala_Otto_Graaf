@@ -15,11 +15,17 @@
                 }
             }
             ?>
-            <a href="bestellen.php"><button class="button button1">kassa</button></a>
+            <a href="bestellen.php"><button class="button3">kassa</button></a>
             </div>
         </div>
     </div>
 </div>
+<?php
+if ($_SERVER['REQUEST_URI'] != "/bestellen.php") {
+    ?>
 <a href="/?catid=1"><button class="button">Nieuws</button></a>
 <a href="/?catid=2"><button class="button">Modellen</button></a>
 <a href="/?catid=3"><button class="button">Land</button></a>
+<?php
+}
+?>
