@@ -224,3 +224,23 @@ width: 100%;
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+<<<<<<< HEAD
+=======
+
+.button {
+  background-color: #0030C2; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #4CAF50;
+}
+>>>>>>> 465f59a846df04a202610845b3272b7454c5a64c
