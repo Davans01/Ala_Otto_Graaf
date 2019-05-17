@@ -1,4 +1,6 @@
 <?php
+session_start();
+unset($shoppingcart);
 @ini_set('display_errors', '1');
 // Database settings
 // Connection to MySQL Database
@@ -19,4 +21,10 @@ if (isset($db->connect_error)){
 };
 
 require_once(__DIR__ . '/../lib/lib.php');
+require_once(__DIR__ . '/../classes/shoppingcart.php');
+
+// SHOPPINGCART
+
+$shoppingcart = new ShoppingCart();
+
 ?>

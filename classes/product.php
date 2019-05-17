@@ -3,7 +3,6 @@
 class Product 
 {
 
-    public $productid;
 
     function __construct($id)
     {

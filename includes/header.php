@@ -6,13 +6,19 @@
             <!-- Image for the soppingcart -->
             <a href="#cart"><img width="30px" src="images/shoppingcart.png"></a>
             <div class="dropdown-content" style="float: left; margin-right: 20px;">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <?php
+            $cartitems = $shoppingcart->get_cartitems();
+            if ($cartitems) {
+                foreach ($cartitems as $cartitem) {
+                    $cartproduct = $shoppingcart->get_itemdetails($cartitem['productid']);
+                    echo "<a href='#'>".$cartproduct['name']."</a>";
+                }
+            }
+            ?>
             </div>
         </div>
     </div>
 </div>
-<a href="/?catid=1">Nieuws</a>
-<a href="/?catid=2">Modellen</a>
-<a href="/?catid=3">Land</a>
+<a href="/?catid=1"><button class="button">Nieuws</button></a>
+<a href="/?catid=2"><button class="button">Modellen</button></a>
+<a href="/?catid=3"><button class="button">Land</button></a>
