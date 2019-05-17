@@ -11,11 +11,30 @@
  Target Server Version : 50724
  File Encoding         : 65001
 
- Date: 15/05/2019 09:08:06
+ Date: 16/05/2019 23:35:14
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for catogory
+-- ----------------------------
+DROP TABLE IF EXISTS `catogory`;
+CREATE TABLE `catogory` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of catogory
+-- ----------------------------
+BEGIN;
+INSERT INTO `catogory` VALUES (1, 'nieuws');
+INSERT INTO `catogory` VALUES (2, 'modellen');
+INSERT INTO `catogory` VALUES (3, 'landen');
+COMMIT;
 
 -- ----------------------------
 -- Table structure for comments
@@ -102,8 +121,32 @@ CREATE TABLE `products` (
   `description` varchar(255) DEFAULT NULL,
   `quantity` varchar(255) DEFAULT NULL,
   `price` varchar(255) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `catogory_id` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of products
+-- ----------------------------
+BEGIN;
+INSERT INTO `products` VALUES (1, 'Mountain', 'Deze prachtige foto laat de schoonheid van de natuur zien!', '-1', '16,00', 'images/jordan-arnold-1513926-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (2, 'Mountain night', 'Deze prachtige foto laat een berg zien in het donker met een prachtig uitzicht!', '-1', '16,00', 'images/benjamin-voros-575800-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (3, 'Mountain water', 'Deze prachtige foto laat een rivier zien die zo helder is dat je de reflectie van kunt zien!', '-1', '16,00', 'images/chi-liu-1552956-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (4, 'Mountain savanna', 'Deze prachtige foto laat de bergen zien in het midden van de savanne!', '-1', '16,00', 'images/dimitry-anikin-1461827-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (5, 'Island picture', 'Deze prachtige drone foto laat een eiland zien vanaf de bovenkant', '-1', '16,00', 'images/dominic-krainer-1381989-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (6, 'Snow', 'Deze prachtige foto laat een landschap zijn die is bedekt met sneeuw!', '-1', '16,00', 'images/erzsebet-vehofsics-1401802-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (7, 'Strand', 'Deze prachtige foto laat een strandje zien aan het water!', '-1', '16,00', 'images/sebastien-jermer-27003-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (8, NULL, NULL, '-1', '16,00', 'images/jordan-arnold-1513926-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (9, NULL, NULL, '-1', '16,00', 'images/michael-liao-1508603-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (10, NULL, NULL, '-1', '16,00', 'images/mark-mathew-1289706-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (11, NULL, NULL, '-1', '16,00', 'images/pablo-guerrero-1308486-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (12, NULL, NULL, '-1', '16,00', 'images/luca-micheli-455516-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (13, NULL, NULL, '-1', '16,00', 'images/maarten-deckers-234714-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (14, NULL, NULL, '-1', '16,00', 'images/oliver-ash-1279414-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (15, NULL, NULL, '-1', '16,00', 'images/daniel-ferrandiz-mont-1316873-unsplash.jpg', 3);
+INSERT INTO `products` VALUES (16, NULL, NULL, '-1', '16,00', 'images/anton-repponen-99530-unsplash.jpg', 3);
+COMMIT;
 
 -- ----------------------------
 -- Table structure for users
