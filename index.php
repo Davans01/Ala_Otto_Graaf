@@ -26,8 +26,8 @@
                 echo "<a href='view.php?id=".$product['id']."'><img class='picture' src='" .$product['image'] ."'></a>";
             }
             ?>
-                    </div>
-                    <!-- Include footer.php -->
-                    <?php include('includes/footer.php') ?>
-                </body>
-            </html>
+        </div>
+        <!-- Include footer.php -->
+        <?php include('includes/footer.php') ?>
+    </body>
+</html>
