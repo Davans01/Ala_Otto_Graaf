@@ -121,4 +121,13 @@ class ShoppingCart
 
         return $item;
     }
+
+    public function delete_item($id)
+    {
+        //
+        global $db;
+        // delete the item from order_items
+        $db->where("id = $id");
+        $db->delete('order_items');
+    }
 }

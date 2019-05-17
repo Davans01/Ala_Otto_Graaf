@@ -11,10 +11,11 @@
             if ($cartitems) {
                 foreach ($cartitems as $cartitem) {
                     $cartproduct = $shoppingcart->get_itemdetails($cartitem['productid']);
-                    echo $cartproduct['name']." <a href='#'>x</a>";
+                    echo $cartproduct['name']."<a href='/?deletecartitem=".$cartitem['id']."'>x</a><br>";
                 }
             }
             ?>
+            <a href="bestellen.php"><button class="button button1">kassa</button></a>
             </div>
         </div>
     </div>

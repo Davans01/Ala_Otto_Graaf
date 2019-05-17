@@ -27,4 +27,7 @@ require_once(__DIR__ . '/../classes/shoppingcart.php');
 
 $shoppingcart = new ShoppingCart();
 
+if (isset($_GET['deletecartitem'])) {
+	$shoppingcart->delete_item($_GET['deletecartitem']);
+}
 ?>
